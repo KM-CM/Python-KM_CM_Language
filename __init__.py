@@ -10,23 +10,23 @@ def Add( Identifier, Translation, Group = '__ALL__' ):
         __LANGUAGE__[ Group ][ Identifier ] = Translation
 
 def Get( Identifier, Group = '__ALL__' ):
-    """
-``Get``'s the phrase at ``Identifier``.
-    """
     try:
         return __LANGUAGE__[ Group ][ Identifier ]
     except:
         return ''
 
 def Free( Identifier, Group = '__ALL__' ):
-    """
-Frees the space at ``Identifier``.
-    """
     try:
         G = __LANGUAGE__[ Group ]
         del G[ Identifier ]
         if not G: del __LANGUAGE__[ Group ]
     except: pass
+
+def FreeGroup( Group ):
+    try:
+        del __LANGUAGE__[ Group ]
+        return True
+    except: return False
 
 def Localize( String, Group = '__ALL__' ):
     try: D = __LANGUAGE__[ Group ]
