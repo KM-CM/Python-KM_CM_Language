@@ -4,9 +4,10 @@ There is the global language dictionary (`__LANGUAGE__` in `__SHARED__`), which 
 ```py
 __LANGUAGE__ = {
     '__ALL__': { #`__ALL__` is the group for all translations, useful when you have only one language
-        'HelloWorld': 'Hello, World!' #`Localize( '#HelloWorld' )` == `Get( 'HelloWorld' )` == `'Hello, World!'`
+        'HelloWorld': 'Hello, World!'
     }
 }
+assert Localize( '#HelloWorld' ) == Get( 'HelloWorld' ) == 'Hello, World!'
 ```
 
 The `Localize` function is the only one which I want to talk about more than in the documentation,
