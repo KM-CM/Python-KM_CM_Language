@@ -10,6 +10,8 @@ __LANGUAGE__ = {
 assert Localize( '#HelloWorld' ) == Get( 'HelloWorld' ) == 'Hello, World!'
 ```
 
+The `__ALL__` group is the default group for all translations, useful when you have one language.
+
 The `Localize` function is the only one which I want to talk about more than in the documentation,
 and there's no better way to talk about something complicated than straight up show it.
 
