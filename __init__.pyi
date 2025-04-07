@@ -6,6 +6,8 @@ def Add( Identifier: str, Translation: str, Group: str = ... ) -> None:
 ``Add``'s an ``Identifier`` for ``Translation``.
     """
 
+def AddGroup( Translations: dict[ str, str ], Group: str = ... ) -> None: ...
+
 def Get( Identifier: str, Group: str = ... ) -> str:
     """
 ``Get``'s the phrase at ``Identifier``.
@@ -19,10 +21,7 @@ def Free( Identifier: str, Group: str = ... ) -> None:
 ``Free``'s the space at ``Identifier``.
     """
 
-def FreeGroup( Group: str ) -> bool:
-    """
-Same as ``Free``, but for a group.
-    """
+def FreeGroup( Group: str ) -> bool: ...
 
 def Localize( String: str, Group: str = ... ) -> str:
     """
