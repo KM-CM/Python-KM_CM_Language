@@ -33,7 +33,7 @@ Localize( '\\#X' ) #'#X'
 Localize( '\\\\#X' ) #'\\EX'
 ```
 
-Group identifiers can be anything. Identifiers (for translations) can contain the following set of characters.
+Group identifiers can be anything. Identifiers for translations can only contain the following set of characters.
 ```
 { '_',
   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
