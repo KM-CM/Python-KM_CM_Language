@@ -1,19 +1,20 @@
-from __SHARED__ import __LANGUAGE__ as _dLang
+__LANGUAGE__ = {}
+
 from re import sub as _sub
 
 def Add( Identifier, Translation, Group = '__ALL__' ):
     try:
-        _dLang[ Group ][ Identifier ] = Translation
+        __LANGUAGE__[ Group ][ Identifier ] = Translation
     except:
-        _dLang[ Group ] = {}
-        _dLang[ Group ][ Identifier ] = Translation
+        __LANGUAGE__[ Group ] = {}
+        __LANGUAGE__[ Group ][ Identifier ] = Translation
 
 def Get( Identifier, Group = '__ALL__' ):
     """
 ``Get``'s the phrase at ``Identifier``.
     """
     try:
-        return _dLang[ Group ][ Identifier ]
+        return __LANGUAGE__[ Group ][ Identifier ]
     except:
         return ''
 
@@ -22,13 +23,13 @@ def Free( Identifier, Group = '__ALL__' ):
 Frees the space at ``Identifier``.
     """
     try:
-        G = _dLang[ Group ]
+        G = __LANGUAGE__[ Group ]
         del G[ Identifier ]
-        if not G: del _dLang[ Group ]
+        if not G: del __LANGUAGE__[ Group ]
     except: pass
 
 def Localize( String, Group = '__ALL__' ):
-    try: D = _dLang[ Group ]
+    try: D = __LANGUAGE__[ Group ]
     except: D = {}
     def W( M ):
         if M.group( 1 ):
