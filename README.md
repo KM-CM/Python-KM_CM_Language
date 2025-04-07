@@ -1,4 +1,4 @@
-The `Language` library will help you with localizing strings. I made it for fun, but it might be useful to some.
+The `Language` library will help you with localizing strings.
 
 There is the global language dictionary (`__LANGUAGE__` in `__SHARED__`), which contains groups, which contain identifiers and translations.
 ```py
