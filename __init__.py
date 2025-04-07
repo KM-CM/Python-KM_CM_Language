@@ -9,6 +9,13 @@ def Add( Identifier, Translation, Group = '__ALL__' ):
         __LANGUAGE__[ Group ] = {}
         __LANGUAGE__[ Group ][ Identifier ] = Translation
 
+def AddGroup( Group = '__ALL__', Translations = {} ):
+    try: G = __LANGUAGE__[ Group ]
+    except:
+        G = {}
+        __LANGUAGE__[ Group ] = G
+    G.update( Translations )
+
 def Get( Identifier, Group = '__ALL__' ):
     try:
         return __LANGUAGE__[ Group ][ Identifier ]
