@@ -25,14 +25,6 @@ Now, you might be wondering - why did "Another Class" translate correctly?
 Well, it's quite simple - "#Another" turns to "Another", as it's a non-existent translation,
 and "#Class" turns into "Class".
 
-Note the fact that escape sequences are supported.
-```py
-Add( 'X', 'EX' )
-Localize( '#X' ) #'EX'
-Localize( '\\#X' ) #'#X'
-Localize( '\\\\#X' ) #'\\EX'
-```
-
 Group identifiers can be anything. Identifiers for translations can only contain the following set of characters.
 ```
 { '_',
