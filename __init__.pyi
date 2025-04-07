@@ -1,3 +1,6 @@
+__LANGUAGE__: dict[ str, dict[ str, str ] ] = ...
+"""Stores all known ``Group``'s of translations. Each group is the ``Identifier`` and the ``Translation``."""
+
 def Add( Identifier: str, Translation: str, Group: str = ... ) -> None:
     """
 ``Add``'s an ``Identifier`` for ``Translation``.
