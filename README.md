@@ -1,6 +1,6 @@
 The `Language` library will help you with localizing strings.
 
-There is the global language dictionary (`__LANGUAGE__` in `__SHARED__`), which contains groups, which contain identifiers and translations.
+There is the global language dictionary (`__LANGUAGE__`), which contains groups, which contain identifiers and translations.
 ```py
 __LANGUAGE__ = {
     '__ALL__': { #`__ALL__` is the group for all translations, useful when you have only one language
