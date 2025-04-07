@@ -21,7 +21,7 @@ def Free( Identifier: str, Group: str = ... ) -> None:
 ``Free``'s the space at ``Identifier``.
     """
 
-def FreeGroup( Group: str ) -> bool: ...
+def FreeGroup( Group: str ) -> None: ...
 
 def Localize( String: str, Group: str = ... ) -> str:
     """
