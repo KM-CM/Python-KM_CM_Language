@@ -30,10 +30,8 @@ def Free( Identifier, Group = '__ALL__' ):
     except: pass
 
 def FreeGroup( Group ):
-    try:
-        del __LANGUAGE__[ Group ]
-        return True
-    except: return False
+    try: del __LANGUAGE__[ Group ]
+    except: pass
 
 def Localize( String, Group = '__ALL__' ):
     try: D = __LANGUAGE__[ Group ]
