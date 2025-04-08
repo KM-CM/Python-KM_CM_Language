@@ -9,7 +9,7 @@ def Add( Identifier, Translation, Group = '__ALL__' ):
         __LANGUAGE__[ Group ] = {}
         __LANGUAGE__[ Group ][ Identifier ] = Translation
 
-def AddGroup( Translations = {}, Group = '__ALL__' ):
+def AddGroup( Translations, Group = '__ALL__' ):
     try: G = __LANGUAGE__[ Group ]
     except:
         G = {}
