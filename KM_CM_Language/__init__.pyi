@@ -1,4 +1,6 @@
 """
+https://github.com/0KMCM0/Python-KM_CM_Language
+
 The ``Language`` library will help you with localizing strings.
 
 ``__ALL__`` is the default language group - useful if you only have one language.
