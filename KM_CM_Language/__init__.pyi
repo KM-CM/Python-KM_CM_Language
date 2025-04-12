@@ -15,7 +15,7 @@ Identifiers for translations and groups can only contain the following set of ch
 """
 
 __LANGUAGE__: dict[ str, dict[ str, str ] ] = ...
-"""Stores all known ``Group``'s of translations. Each group is the ``Identifier`` and the ``Translation``."""
+"""Stores all known groups of translations."""
 
 def Add( Identifier: str, Translation: str, Group: str = ... ) -> None:
     """
