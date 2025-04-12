@@ -42,14 +42,6 @@ def Localize( String: str, Group: str = ... ) -> str:
     """
 Localize everything in ``String``.
 Follows the format used by the Source Engine.
-
-For example, imagine that ``Add( 'EX', 'Example' )`` was run.
-'#EX' -> 'Example'
-'\\\\#EX' -> '#EX'
-'\\\\\\\\#EX -> '\\\\Example'
-
+Handles escaped sequences and escapes of escape sequences.
 Keys that aren't found are ignored.
-'#X' -> 'X'
-'\\#X' -> '#X'
-'\\\\#X' -> '\\X'
     """
