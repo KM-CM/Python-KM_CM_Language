@@ -43,7 +43,9 @@ def Localize( String, Group = '__ALL__' ):
             K = M.group( 2 )
             try: return '\\' + D[ K ]
             except: return '\\' + K
-        K = M.group( 3 )
+        if M.group( 3 ):
+            return '\\#' + M.group( 3 )
+        K = M.group( 4 )
         try: return D[ K ]
         except: return K
-    return _sub( r'\\#([A-Za-z0-9_]+)|\\\\#([A-Za-z0-9_]+)|#([A-Za-z0-9_]+)', W, String )
+    return _sub( r'\\#([A-Za-z0-9_]+)|\\\\#([A-Za-z0-9_]+)|\\\\\\#([A-Za-z0-9_]+)|#([A-Za-z0-9_]+)', W, String )
