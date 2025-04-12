@@ -26,9 +26,7 @@ def AddGroup( Translations: dict[ str, str ], Group: str = ... ) -> None: ...
 
 def Get( Identifier: str, Group: str = ... ) -> str:
     """
-``Get``'s the phrase at ``Identifier``. Returns ``None`` if not found.
-The ``None`` return will not be annotated, as editors like PyCharm
-will say that your code is invalid when it's actually perfectly fine.
+``Get``'s the phrase at ``Identifier``. Returns ``''`` if Not Found.
     """
 
 def Free( Identifier: str, Group: str = ... ) -> None:
