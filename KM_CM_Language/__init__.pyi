@@ -26,7 +26,7 @@ def AddGroup( Translations: dict[ str, str ], Group: str = ... ) -> None: ...
 
 def Get( Identifier: str, Group: str = ... ) -> str:
     """
-``Get``'s the phrase at ``Identifier``. Returns ``''`` if Not Found.
+``Get``'s the phrase at ``Identifier``. Returns an empty string if not found.
     """
 
 def Free( Identifier: str, Group: str = ... ) -> None:
