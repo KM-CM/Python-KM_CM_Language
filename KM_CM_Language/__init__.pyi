@@ -1,5 +1,5 @@
 """
-https://github.com/0KMCM0/Python-KM_CM_Language
+https://github.com/KM-CM/Python-KM_CM_Language
 
 The ``Language`` library will help you with localizing strings.
 
@@ -43,3 +43,4 @@ Follows the format used by the Source Engine.
 Handles escaped sequences and escapes of escape sequences.
 Keys that aren't found are ignored.
     """
+
